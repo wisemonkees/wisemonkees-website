@@ -90,7 +90,7 @@
                     </div>
                     <div class="game-links">
                         <a href="https://store.steampowered.com/app/2835760?utm_source=wm-website" class="btn btn-primary"><p class ="fab fa-steam"></p> Steam Page</a>
-                        <a href="#" class="btn btn-secondary">📖 Read More(N/A)</a>
+                        <a href="gamepages/tstd.html" class="btn btn-secondary">📖 Read More</a>
                     </div>
                 </div>
                 <div class="game-visual">
@@ -132,7 +132,7 @@
                     <div class="game-links">
                         <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website" class="btn btn-primary"><p class ="fab fa-steam"></p> Steam Page</a>
                         <a href="https://wisemonkees.itch.io/mate-morphosis" class="btn btn-primary"><p class ="fab fa-itch-io"></p> itch.io Page</a>
-                        <a href="#" class="btn btn-secondary">📖 Read More(N/A)</a>
+                        <a href="gamepages/mm.html" class="btn btn-secondary">📖 Read More</a>
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
 
-    function showPage(targetId) {
+    function showPage(targetId, clickedLink = null) {
         // Hide all pages
         pages.forEach(page => page.classList.remove('active'));
 
@@ -252,17 +252,26 @@
 
         // Update active nav link
         navLinks.forEach(link => link.classList.remove('active'));
-        event.target.classList.add('active');
+        if (clickedLink) {
+            clickedLink.classList.add('active');
+        } else {
+            // if we came from hash, find the matching nav link
+            const match = document.querySelector(`.nav-link[href="${targetId}"]`);
+            if (match) match.classList.add('active');
+        }
     }
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = link.getAttribute('href');
-            showPage(targetId);
+            showPage(targetId, link);
 
             // Close mobile nav if open
             document.getElementById('navLinks').classList.remove('active');
+
+            // Update URL hash
+            history.pushState(null, '', targetId);
         });
     });
 
@@ -279,7 +288,27 @@
                 el.style.animationDelay = `${index * 0.1}s`;
             }, 100);
         });
+
+        // Show the correct page based on hash when loading
+        if (window.location.hash) {
+            showPage(window.location.hash);
+        } else {
+            // fallback: show the first page
+            const firstLink = navLinks[0];
+            if (firstLink) {
+                const targetId = firstLink.getAttribute('href');
+                showPage(targetId, firstLink);
+            }
+        }
+    });
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', () => {
+        if (window.location.hash) {
+            showPage(window.location.hash);
+        }
     });
 </script>
+
 </body>
 </html>
