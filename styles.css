@@ -309,7 +309,7 @@ nav .container {
 
 .screenshot-placeholder {
     width: 100%;
-    height: 300px;
+    /* height: 250px; */
     background: var(--bg-accent);
     border-radius: 12px;
     border: 2px solid var(--border-color);
@@ -329,7 +329,7 @@ nav .container {
 }
 
 .screenshot-grid .screenshot-placeholder {
-    height: 180px;
+    height: 150px;
     font-size: 0.9rem;
 }
 

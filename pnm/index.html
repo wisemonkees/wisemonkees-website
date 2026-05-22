@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr" data-bs-theme="dark">
 <head>
     <meta name="description" content="Webpage description goes here"/>
@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body style="background-color:var(--bg-primary);">
@@ -25,7 +25,7 @@
             <span class="logo-text">WiseMonkeES</span>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html#home" class="nav-link active">Home</a></li>
+            <li><a href="../index.html#home" class="nav-link">Home</a></li>
             <li><a href="../index.html#games" class="nav-link">Games</a></li>
             <li><a href="../index.html#about" class="nav-link">About</a></li>
             <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
@@ -40,45 +40,19 @@
     </div>
     <div class="row">
         <div class="col-xl-9 col-xxl-9 col-xs-12 col-sm-12 col-md-12 text-center">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-                 style="border-radius: 10px;">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../src/pnm/pnm_ss01.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../src/pnm/pnm_ss02.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../src/pnm/pnm_ss03.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../src/pnm/pnm_ss04.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            
+            <button onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';"
+                style="width:100%; display: block; height: 41.05%; background-color: var(--bg-secondary); color:var(--accent-secondary)"
+            >
+                <h1>Run Game</h1>
+            </button>
+
+            <iframe id="game-frame" frameborder="0" 
+                src="https://itch.io/embed-upload/17609235?color=510ac4" 
+                allowfullscreen width="100%" height="50%"
+                style="display:none;"
+            >
+            </iframe>
 
             <div class="row text-start" style="margin-top:20px; margin-bottom:20px;">
                 <div class="col">
@@ -137,7 +111,7 @@
                         </div>
                         <div class="card-body" style="background-color:var(--bg-secondary);">
                             <a href="#" style="color:var(--text-secondary)">Idler</a>,
-                            <a href="#" style="color:var(--text-secondary);">Clicker</a>,
+                            <a href="#" style="color:var(--text-secondary);">Incremental</a>,
                             <a href="#" style="color:var(--text-secondary);">Arcade</a>,
                             <a href="#" style="color:var(--text-secondary);">Space</a>,
                         </div>
@@ -190,7 +164,7 @@
             </div>
             <p style="margin-top:20px;">Coming Soon...</p>
             <div class="d-grid gap-2">
-                <button type="button" onclick= "location.href='https://store.steampowered.com/app/3863030?utm_source=wm-website'" class="btn btn-lg" style="background-color: var(--accent-primary)"><i
+                <button type="button" onclick= "location.href='https://store.steampowered.com/app/4456110/Planet_No_More/'" class="btn btn-lg" style="background-color: var(--accent-primary)"><i
                         class="fa-solid fa-heart"></i> Add to
                     Wishlist
                 </button>
