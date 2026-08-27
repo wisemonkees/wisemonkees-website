@@ -1,359 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wise Monke Entertainment Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+    <title>Wise Monke Entertainment Studio | Indie Game Studio</title>
+    <meta name="description"
+        content="Wise Monke Entertainment Studio is an indie game development studio crafting innovative, distinct games with retro charm and unforgettable experiences.">
+    <meta name="theme-color" content="#0c0e14">
+    <link rel="icon" type="image/png" href="src/KurumsalYazısız.png">
+    <link rel="apple-touch-icon" href="src/KurumsalYazısız.png">
+
+    <!-- Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wisemonkees.com/">
+    <meta property="og:title" content="Wise Monke Entertainment Studio">
+    <meta property="og:description"
+        content="Never just another game. Crafting memorable, distinct, and innovative indie games.">
+    <meta property="og:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
+    <meta property="og:site_name" content="Wise Monke Entertainment Studio">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wisemonke_es">
+    <meta name="twitter:creator" content="@wisemonke_es">
+    <meta name="twitter:title" content="Wise Monke Entertainment Studio">
+    <meta name="twitter:description"
+        content="Never just another game. Crafting memorable, distinct, and innovative indie games.">
+    <meta name="twitter:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<!-- Navigation -->
-<nav>
-    <div class="container">
-        <div class="logo-container">
-            <img src="src/KurumsalYazısız.png" alt="Wise Monke Studio Logo" class="studio-logo">
-            <span class="logo-text">WiseMonkeES</span>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#games" class="nav-link">Games</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
-    </div>
-</nav>
-
-<!-- Home Page -->
-<div id="home" class="page active">
-    <section class="hero">
+    <!-- Navigation -->
+    <nav>
         <div class="container">
-            <div class="hero-content fade-in">
-                <img src="src/KurumsalYazısız.png" alt="wisemonkees Logo" class="hero-logo">
-
-                <h1>Wise Monke Entertainment Studio</h1>
-                <p class="subtitle">Never just another game.</p>
-                <p class="description">
-                    Every experience is designed to surprise, delight, and leave a good aftertaste behind.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#games" class="btn btn-primary nav-link">Explore Our Games</a>
-                    <a href="#about" class="btn btn-secondary nav-link">Learn More</a>
-                </div>
-                <div class="cta-buttons" style="margin-top: 1rem;">
-                    <a href="https://discord.gg/RRXcggnZGb" class="btn btn-primary" target="_blank">
-                        <div class ="fab fa-discord"></div>
-                        Join Our Community
-                    </a>
-                </div>
-
-                </div>
+            <a href="#home" class="logo-container" style="text-decoration: none; color: inherit;">
+                <img src="src/KurumsalYazısız.png" alt="Wise Monke Studio Logo" class="studio-logo">
+                <span class="logo-text">WiseMonkeES</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="links.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
         </div>
-    </section>
+    </nav>
 
-    <section class="trailer">
-        <div class="container">
-            <h2 class="trailer-title">Watch Our Latest Trailer</h2>
-            <div class="trailer-video">
-                <iframe width="1080" height="608" src="https://www.youtube.com/embed?v=FWVTfb45_us"
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <img src="src/KurumsalYazısız.png" alt="Wise Monke Studio Logo" class="hero-logo screenshot-zoomable">
+
+                    <h1>WISE MONKE ENTERTAINMENT STUDIO</h1>
+                    <p class="subtitle">Never just another game.</p>
+                    <p class="description">
+                        Every experience is designed to surprise, delight, and leave a memorable impression behind.
+                        Crafting distinct mechanics, retro charm, and innovative gameplay.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#games" class="btn btn-primary nav-link">Explore Our Games</a>
+                        <a href="#about" class="btn btn-secondary nav-link">About Studio</a>
+                        <a href="links.html" class="btn btn-cyan">Contact & Links</a>
+                    </div>
+                    <div class="cta-buttons" style="margin-top: 1rem;">
+                        <a href="https://discord.gg/RRXcggnZGb" class="btn btn-secondary" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-discord"></i>
+                            Join Discord Community
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trailer">
+            <div class="container">
+                <h2 class="trailer-title">Featured Trailer</h2>
+                <div class="trailer-video">
+                    <iframe width="1080" height="608" src="https://www.youtube.com/embed/FWVTfb45_us"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Games Page -->
-<div id="games" class="page">
-    <section class="games-header">
-        <div class="container">
-            <h2 class="page-title">Our Games</h2>
-            <p class="page-description">
-                Discover our collection of games.
-            </p>
-        </div>
-    </section>
-
-    <!-- Thus Spoke The Donke -->
-    <section class="game-showcase">
-        <div class="container">
-            <div class="game-content">
-                <div class="game-info">
-                    <h3>Thus Spoke The Donke</h3>
-                    <div class="game-tags">
-                        <span class="tag">Stealth</span>
-                        <span class="tag">Action</span>
-                        <span class="tag">Satire</span>
-                    </div>
-                    <div class="game-description">
-                        <p>Build your weapons and complete tasks in your style to bring down an empire in this disco-fueled
-                            satirical adventure. Navigate a world where humanity bows to the god emperor Donke, filled
-                            with disco, dark humor, and direct wit.</p>
-                        <p>A pixel art masterpiece that questions authority while making you groove to the beat of
-                            revolution. Experience a unique blend of stealth mechanics and social commentary.</p>
-                    </div>
-                    <div class="game-links">
-                        <a href="https://store.steampowered.com/app/2835760?utm_source=wm-website" class="btn btn-primary"><p class ="fab fa-steam"></p> Steam Page</a>
-                        <a href="tstd" class="btn btn-secondary">📖 Read More</a>
-                    </div>
-                </div>
-                <div class="game-visual">
-                    <img class="screenshot-placeholder" src="src/tstd/capsule.png">
-                    <div class="screenshot-grid">
-                        <img class="screenshot-placeholder" src="src/tstd/ss11.jpg">
-                        <img class="screenshot-placeholder" src="src/tstd/ss4.png">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mate'morphosis -->
-    <section class="game-showcase">
-        <div class="container">
-            <div class="game-content reverse">
-                <div class="game-visual">
-                    <img class="screenshot-placeholder" src="src/mm/header.png">
-                    <div class="screenshot-grid">
-                        <img class="screenshot-placeholder" src="src/mm/ag5oUd.png">
-                        <img class="screenshot-placeholder" src="src/mm/ui79xa.png">
+    <!-- Games Section -->
+    <section id="games">
+        <div class="games-header">
+            <div class="container">
+                <h2 class="page-title">Featured Projects</h2>
+                <p class="page-description">
+                    Explore our catalog of games built with passion and distinct mechanics.
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding: 50px 20px;">
+            <!-- Thus Spoke The Donke -->
+            <article class="game-card-retro" style="margin-bottom: 36px;">
+                <div class="game-content">
+                    <div class="game-info">
+                        <div style="margin-bottom: 8px;">
+                            <span class="status-badge soon"><span class="status-dot"></span> In Development</span>
+                        </div>
+                        <h3>// 01. Thus Spoke The Donke</h3>
+                        <div class="game-tags">
+                            <span class="tag">Stealth</span>
+                            <span class="tag">Action Sandbox</span>
+                            <span class="tag">Satire</span>
+                            <span class="tag">Pixel Art</span>
+                        </div>
+                        <div class="game-description">
+                            <p>Thus Spoke the Donke is an immersive stealth-action sandbox where you play as a mercenary assassin serving the will of The Great Donke. Customize weapons and abilities to create your own combat style. Complete contracts through precision stealth or unleash brutal, environment-driven action.</p>
+                            <p>A satirical pixel art playground questioning authority with complete freedom of approach.</p>
+                        </div>
+                        <div class="game-links">
+                            <a href="https://store.steampowered.com/app/2835760?utm_source=wm-website" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-steam"></i> Steam Wishlist</a>
+                            <a href="tstd" class="btn btn-secondary">📖 Overview</a>
+                        </div>
+                    </div>
+                    <div class="game-visual">
+                        <img class="screenshot-placeholder screenshot-zoomable" src="src/tstd/capsule.png" alt="Thus Spoke The Donke Capsule" loading="lazy">
+                        <div class="screenshot-grid">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/tstd/ss11.jpg" alt="Thus Spoke The Donke Screenshot" loading="lazy">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/tstd/ss4.png" alt="Thus Spoke The Donke Gameplay" loading="lazy">
+                        </div>
                     </div>
                 </div>
-                <div class="game-info">
-                    <h3>Mate'Morphosis</h3>
-                    <div class="game-tags">
-                        <span class="tag">Puzzle</span>
-                        <span class="tag">Chess</span>
-                        <span class="tag">Casual</span>
+            </article>
+
+            <!-- Mate'morphosis -->
+            <article class="game-card-retro" style="margin-bottom: 36px;">
+                <div class="game-content reverse">
+                    <div class="game-visual">
+                        <img class="screenshot-placeholder screenshot-zoomable" src="src/mm/header.png" alt="Mate'Morphosis Header" loading="lazy">
+                        <div class="screenshot-grid">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/mm/ag5oUd.png" alt="Mate'Morphosis Screenshot 1" loading="lazy">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/mm/ui79xa.png" alt="Mate'Morphosis Screenshot 2" loading="lazy">
+                        </div>
                     </div>
-                    <div class="game-description">
-                        <p>Transform the classic game of chess in this mind-bending puzzle experience.
-                            Mate Morphosis is a chess-inspired puzzle game built around the concept of becoming the piece you capture.
-                            Outsmart each board, adapt to evolving mechanics, and hunt down the rival king across every stage.</p>
-                        <br>
-                        <p>A collabration with Bruder Games</p>
+                    <div class="game-info">
+                        <div style="margin-bottom: 8px;">
+                            <span class="status-badge live"><span class="status-dot"></span> Available Now</span>
+                        </div>
+                        <h3>// 02. Mate'Morphosis</h3>
+                        <div class="game-tags">
+                            <span class="tag">Puzzle</span>
+                            <span class="tag">Chess</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Pixel Art</span>
+                        </div>
+                        <div class="game-description">
+                            <p>Mate'Morphosis is a pixel art, chess-inspired puzzle game built around the concept of becoming the piece you capture. Outsmart each board, adapt to evolving mechanics, and hunt down the rival king across every stage.</p>
+                            <p><strong>Developed in collaboration with Bruder Studio.</strong></p>
+                        </div>
+                        <div class="game-links">
+                            <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-steam"></i> Steam Store</a>
+                            <a href="https://wisemonkees.itch.io/mate-morphosis" target="_blank" rel="noopener" class="btn btn-cyan"><i class="fab fa-itch-io"></i> itch.io Demo</a>
+                            <a href="mm" class="btn btn-secondary">📖 Overview</a>
+                        </div>
                     </div>
-                    <div class="game-links">
-                        <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website" class="btn btn-primary"><p class ="fab fa-steam"></p> Steam Page</a>
-                        <a href="https://wisemonkees.itch.io/mate-morphosis" class="btn btn-primary"><p class ="fab fa-itch-io"></p> itch.io Page</a>
-                        <a href="mm" class="btn btn-secondary">📖 Read More</a>
+                </div>
+            </article>
+
+            <!-- Planet No More -->
+            <article class="game-card-retro" style="margin-bottom: 36px;">
+                <div class="game-content">
+                    <div class="game-info">
+                        <div style="margin-bottom: 8px;">
+                            <span class="status-badge soon"><span class="status-dot"></span> Releasing Q4 2026</span>
+                        </div>
+                        <h3>// 03. Planet No More</h3>
+                        <div class="game-tags">
+                            <span class="tag">Casual</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Incremental</span>
+                        </div>
+                        <div class="game-description">
+                            <p>
+                                Planet No More is an arcade-incremental experience where you pulverize celestial bodies with your fleet. Dynamically shatter planets, scavenge materials into the void before your fuel runs out, and unlock deep upgrades across the galaxy.
+                            </p>
+                            <p><strong>Publishers:</strong> Rogue Duck Interactive, Gamersky Games</p>
+                        </div>
+                        <div class="game-links">
+                            <a href="https://store.steampowered.com/app/4456110?utm_source=wm-website" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-steam"></i> Steam Wishlist</a>
+                            <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener" class="btn btn-cyan"><i class="fab fa-itch-io"></i> itch.io Demo</a>
+                            <a href="pnm" class="btn btn-secondary">📖 Overview</a>
+                        </div>
                     </div>
+                    <div class="game-visual">
+                        <img class="screenshot-placeholder screenshot-zoomable" src="src/pnm/pnm_logo.png" alt="Planet No More Logo" loading="lazy">
+                        <div class="screenshot-grid">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/pnm/pnm_ss01.png" alt="Planet No More Screenshot 1" loading="lazy">
+                            <img class="screenshot-placeholder screenshot-zoomable" src="src/pnm/pnm_ss02.png" alt="Planet No More Screenshot 2" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="games-header">
+            <div class="container">
+                <h2 class="page-title">About Studio</h2>
+                <p class="page-description">
+                    The philosophy and driving force behind Wise Monke Entertainment Studio.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="container">
+                <div class="about-section">
+                    <h3>Our Mission</h3>
+                    <p>Wise Monke Entertainment Studio is an indie game development studio passionate about creating
+                        unique experiences that challenge conventions and spark imagination. We believe in the power of
+                        innovation and gameplay feel.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>Our Philosophy</h3>
+                    <p>We craft games that we genuinely want to play. From satirical stealth
+                        adventures to mind-bending puzzle games, we're here to entertain, provoke thought, and push the
+                        boundaries of indie gaming. Every pixel tells a story, and every mechanic serves a purpose.</p>
+                </div>
+
+                <div class="about-section">
+                    <h3>What We Do</h3>
+                    <p>We focus on creating memorable experiences that stay with players long after they've put down the
+                        controller.</p>
+                </div>
+
+                <div class="about-section" style="text-align: center;">
+                    <h3>Media & Inquiries</h3>
+                    <p style="margin-bottom: 16px;">Looking for press assets, game factsheets, or business partnerships?</p>
+                    <a href="links.html" class="btn btn-cyan">Get In Touch & Media Hub</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Planet No More -->
-    <section class="game-showcase">
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Screenshot">
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px 20px; border-top: 2px solid var(--border-color); background: var(--bg-secondary); color: var(--text-muted); font-size: 0.85rem;">
         <div class="container">
-            <div class="game-content reverse">
-                <div class="game-visual">
-                    <img class="screenshot-placeholder" src="src/pnm/pnm_logo.png">
-                    <div class="screenshot-grid">
-                        <img class="screenshot-placeholder" src="src/pnm/pnm_ss01.png">
-                        <img class="screenshot-placeholder" src="src/pnm/pnm_ss02.png">
-                    </div>
-                </div>
-                <div class="game-info">
-                    <h3>Planet No More</h3>
-                    <div class="game-tags">
-                        <span class="tag">Idler</span>
-                        <span class="tag">Incremental</span>
-                        <span class="tag">Arcade</span>
-                    </div>
-                    <div class="game-description">
-                        <p>
-                            Planet No More is an arcade-incremental game where you build an orbiting fleet 
-                            to dismantle celestial bodies. With every upgrade to your weapons and fleet, 
-                            you’ll push further into the galaxy, strategically grinding down planets to their 
-                            cores to unlock the next celestial bodies.
-                        </p>
-                        <br>
-                    </div>
-                    <div class="game-links">
-                        <a href="https://store.steampowered.com/app/4456110/Planet_No_More?utm_source=wm-website" target="_blank" class="btn btn-primary"><p class ="fab fa-steam"></p> Steam Page</a>
-                        <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" class="btn btn-primary"><p class ="fab fa-itch-io"></p> itch.io Page</a>
-                        <a href="pnm" class="btn btn-secondary">📖 Read More</a>
-                    </div>
-                </div>
+            <p style="margin-bottom: 14px; font-family: 'Space Mono', monospace;">© 2026 Wise Monke Entertainment Studio. All rights reserved.</p>
+            <div class="social-icons" style="justify-content: center;">
+                <a href="https://discord.gg/RRXcggnZGb" target="_blank" rel="noopener" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://youtube.com/@wisemonkees" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/wisemonke_es" target="_blank" rel="noopener" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/wisemonkees" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://store.steampowered.com/dev/wisemonkees" target="_blank" rel="noopener" title="Steam"><i class="fab fa-steam"></i></a>
+                <a href="links.html" title="Contact & Links"><i class="fas fa-link"></i></a>
             </div>
         </div>
-    </section>
+    </footer>
 
-</div>
+    <script>
+        // Smooth scrolling for all internal anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        e.preventDefault();
+                        const navHeight = 75;
+                        const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
 
-<!-- About Page -->
-<div id="about" class="page">
-    <section class="games-header">
-        <div class="container">
-            <h2 class="page-title">About Us</h2>
-            <p class="page-description">
-                The story behind Wise Monke Entertainment Studio and our passion for game development.
-            </p>
-        </div>
-    </section>
+                        // Update URL hash without jumping
+                        history.pushState(null, '', targetId);
 
-    <section class="about-content">
-        <div class="container">
-            <div class="about-section">
-                <h3>Our Mission</h3>
-                <p>Wise Monke Entertainment Studio is an indie game development studio passionate about creating unique
-                    experiences that challenge conventions and spark imagination. We believe in the power of innovation
-                    and gameplay</p>
-            </div>
-
-            <div class="about-section">
-                <h3>Our Philosophy</h3>
-                <p>We craft games that we want to play, they should be fun and innovative. From satirical stealth
-                    adventures to mind-bending puzzle games, we're here to entertain, provoke thought, and push the
-                    boundaries of indie gaming. Every pixel tells a story, and every mechanic serves a purpose.</p>
-            </div>
-
-            <div class="about-section">
-                <h3>What We Do</h3>
-                <p>We focus on creating memorable experiences that stay with players long after they've put down the
-                    controller.</p>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Contact Page -->
-<div id="contact" class="page">
-    <section class="games-header">
-        <div class="container">
-            <h2 class="page-title">Get In Touch</h2>
-            <p class="page-description">
-                Ready to connect? Reach out to us through any of these channels.
-            </p>
-        </div>
-    </section>
-
-    <section class="contact-content">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <h4>Business Inquiries</h4>
-                    <p>contact@wisemonkees.com</p>
-
-                    <div class="social-icons">
-                        <a href="mailto:contact@wisemonkees.com" target="_blank" rel="noopener"><i
-                                class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <h4>Landing pages</h4>
-                    <p>Wise Monke Entertainment Studio</p>
-                    <div class="social-icons">
-                        <a href="https://store.steampowered.com/dev/wisemonkees" target="_blank" rel="noopener"><i
-                                class="fab fa-steam"></i></a>
-                        <a href="https://wisemonkees.itch.io" target="_blank" rel="noopener"><i
-                                class="fab fa-itch-io"></i></a>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <h4>Press & Media</h4>
-                    <p>contact@wisemonkees.com</p>
-                    <div class="social-icons">
-                        <a href="mailto:contact@wisemonkees.com" target="_blank" rel="noopener"><i
-                                class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-card">
-                    <h4>Social Media</h4>
-                    <p>@WiseMonkeES</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/wisemonkees" target="_blank" rel="noopener"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/donkeodyssey" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/donkeodyssey" target="_blank" rel="noopener"><i
-                                class="fab fa-x-twitter"></i></a>
-                        <a href="https://youtube.com/@wisemonkees" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<script>
-    // Navigation functionality
-    const navLinks = document.querySelectorAll('.nav-link');
-    const pages = document.querySelectorAll('.page');
-
-    function showPage(targetId, clickedLink = null) {
-        // Hide all pages
-        pages.forEach(page => page.classList.remove('active'));
-
-        // Show target page
-        const targetPage = document.getElementById(targetId.replace('#', ''));
-        if (targetPage) {
-            targetPage.classList.add('active');
-        }
-
-        // Update active nav link
-        navLinks.forEach(link => link.classList.remove('active'));
-        if (clickedLink) {
-            clickedLink.classList.add('active');
-        } else {
-            // if we came from hash, find the matching nav link
-            const match = document.querySelector(`.nav-link[href="${targetId}"]`);
-            if (match) match.classList.add('active');
-        }
-    }
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            showPage(targetId, link);
-
-            // Close mobile nav if open
-            document.getElementById('navLinks').classList.remove('active');
-
-            // Update URL hash
-            history.pushState(null, '', targetId);
-        });
-    });
-
-    // Mobile navigation toggle
-    function toggleMobileNav() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.toggle('active');
-    }
-
-    // Animation on scroll/load
-    window.addEventListener('load', () => {
-        document.querySelectorAll('.fade-in').forEach((el, index) => {
-            setTimeout(() => {
-                el.style.animationDelay = `${index * 0.1}s`;
-            }, 100);
+                        // Close mobile nav if open
+                        const navLinksEl = document.getElementById('navLinks');
+                        if (navLinksEl) navLinksEl.classList.remove('active');
+                    }
+                }
+            });
         });
 
-        // Show the correct page based on hash when loading
-        if (window.location.hash) {
-            showPage(window.location.hash);
-        } else {
-            // fallback: show the first page
-            const firstLink = navLinks[0];
-            if (firstLink) {
-                const targetId = firstLink.getAttribute('href');
-                showPage(targetId, firstLink);
+        // Lightbox functionality
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            if (lightbox && img) {
+                img.src = src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
         }
-    });
 
-    // Handle browser back/forward buttons
-    window.addEventListener('popstate', () => {
-        if (window.location.hash) {
-            showPage(window.location.hash);
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         }
-    });
-</script>
 
+        document.querySelectorAll('.screenshot-zoomable').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openLightbox(img.src);
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Mobile nav toggle
+        function toggleMobileNav() {
+            const navLinksEl = document.getElementById('navLinks');
+            if (navLinksEl) navLinksEl.classList.toggle('active');
+        }
+
+        // Scroll spy for active navbar highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+        function updateScrollSpy() {
+            let currentSectionId = '';
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            if (!currentSectionId && sections.length > 0) {
+                currentSectionId = sections[0].getAttribute('id');
+            }
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateScrollSpy);
+        window.addEventListener('load', () => {
+            updateScrollSpy();
+            // If page loaded with a hash, smooth scroll to it
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    setTimeout(() => {
+                        const navHeight = 75;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>

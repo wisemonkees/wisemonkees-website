@@ -1,231 +1,210 @@
 <!DOCTYPE html>
-<html lang="tr" data-bs-theme="dark">
+<html lang="en">
 <head>
-    <meta name="description" content="Webpage description goes here"/>
     <meta charset="utf-8">
-    <title>Mate'Morphosis - WiseMonkeES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Mate'Morphosis | Wise Monke Entertainment Studio</title>
+    <meta name="description" content="Mate'Morphosis is a pixel art, chess-inspired puzzle game built around the concept of becoming the piece you capture. Available now on Steam.">
+    <meta name="theme-color" content="#0c0e14">
+    <link rel="icon" type="image/png" href="../src/KurumsalYazısız.png">
+    <link rel="apple-touch-icon" href="../src/KurumsalYazısız.png">
+
+    <!-- Open Graph / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wisemonkees.com/mm/">
+    <meta property="og:title" content="Mate'Morphosis - Chess-Inspired Puzzle Game">
+    <meta property="og:description" content="Become the piece you capture! Outsmart each board and hunt down the rival king. Play now on Steam.">
+    <meta property="og:image" content="https://www.wisemonkees.com/src/mm/header.png">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wisemonke_es">
+    <meta name="twitter:title" content="Mate'Morphosis | Wise Monke Entertainment Studio">
+    <meta name="twitter:description" content="Become the piece you capture! Outsmart each board and hunt down the rival king. Play now on Steam.">
+    <meta name="twitter:image" content="https://www.wisemonkees.com/src/mm/header.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body style="background-color:var(--bg-primary);">
+<body>
 <nav>
     <div class="container">
-        <div class="logo-container">
+        <a href="../index.html" class="logo-container">
             <img src="../src/KurumsalYazısız.png" alt="Wise Monke Studio Logo" class="studio-logo">
-            <span class="logo-text">WiseMonkeES</span>
-        </div>
+            <span class="logo-text">WiseMonke<span>ES</span></span>
+        </a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html#home" class="nav-link">Home</a></li>
-            <li><a href="../index.html#games" class="nav-link">Games</a></li>
-            <li><a href="../index.html#about" class="nav-link">About</a></li>
-            <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#games" class="active">Games</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../links.html">Contact</a></li>
         </ul>
         <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
     </div>
 </nav>
-<div class="container">
-    <div class="row" style="padding:20px;">
-        <h1>Mate'Morphosis</h1>
-        <p></p>
+
+<div class="container" style="padding-top: 90px; padding-bottom: 60px;">
+    
+    <div style="margin-bottom: 24px;">
+        <span class="status-badge live"><span class="status-dot"></span> Available Now</span>
+        <h1 style="font-size: 2.2rem; margin-top: 8px;">// Mate'Morphosis</h1>
     </div>
-    <div class="row">
-        <div class="col-xl-9 col-xxl-9 col-xs-12 col-sm-12 col-md-12 text-center">
-            <button onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';"
-                    style="width:100%; display: block; height: 41.05%; background-color: var(--bg-secondary); color:var(--accent-secondary)">
-                <h1>Run Game</h1>
-            </button>
 
-            <iframe id="game-frame" frameborder="0"
-                    src="https://itch.io/embed-upload/14939415?color=1a1a2e"
-                    allowfullscreen width="100%" height="38%"
-                    style="display:none;">
-            </iframe>
-            <div class="row text-start" style="margin-top:20px; margin-bottom:20px;">
-                <div class="col">
-                    <h1><img style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                            src="https://img.itch.zone/aW1nLzIzMTIwOTgwLnBuZw==/original/ezBwec.png">&nbsp; About Mate
-                        Morphosis&nbsp;&nbsp;<img
-                                style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                                src="https://img.itch.zone/aW1nLzIzMTIwOTgwLnBuZw==/original/ezBwec.png"></h1>
-                    <p>Mate Morphosis is a chess-inspired puzzle game built around the concept of&nbsp;<em>becoming the
-                        piece you capture</em>. Outsmart each board, adapt to evolving mechanics, and hunt down the
-                        rival king across every stage.
-                    </p>
-                    <h2><img style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                            src="https://img.itch.zone/aW1nLzIzMTIwOTk2LnBuZw==/original/s%2Fye%2Fn.png">&nbsp;Features
-                    </h2>
-                    <ul>
-                        <li>Pixel-art graphics with retro charm
-                        </li>
-                        <li>Increasing difficulty levels
-                        </li>
-                        <li>Immersive sound effects and music
-                        </li>
-                        <li>Extra gameplay mechanics beyond classic chess
-                        </li>
-                    </ul>
-                    <h2><img style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                            src="https://img.itch.zone/aW1nLzIzMTIxNDI3LnBuZw==/original/AsQHNe.png">Controls</h2>
-                    <ul>
-                        <li><strong>Mouse</strong>
-                        </li>
-                        <li><strong>Gamepad / Touch</strong>
-                        </li>
-                    </ul>
-                    <h2><img style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                            src="https://img.itch.zone/aW1nLzIzMTIxMzE0LnBuZw==/original/6wrtOD.png">&nbsp;Roadmap</h2>
-                    <ul>
-                        <li>Basic progression system
-                        </li>
-                        <li>More levels & challenges
-                        </li>
-                        <li>Extra mechanics to expand strategy
-                        </li>
-                        <li>Accessibility options (colorblind mode, etc.)
-                        </li>
-                        <li>Potential mobile / web version testing
-                        </li>
-                    </ul>
-                    <h2><img style="cursor: pointer; max-width: 100%; height: auto !important; vertical-align: middle;"
-                            src="https://img.itch.zone/aW1nLzIzMTIxMzE2LnBuZw==/original/WIS2HZ.png">&nbsp;Developer
-                        Notes</h2>
-                    <p>This game is developed by&nbsp;<strong>Wise Monke Entertainment Studio</strong>&nbsp;with love
-                        and curiosity.
-                        Your feedback is extremely valuable and helps us improve!<br>
-                    </p>
-                    <h1><a href="https://store.steampowered.com/app/3863030?utm_source=itchio_page" target="_blank"><img
-                            src="https://img.itch.zone/aW1nLzIzMTQ0NDA3LnBuZw==/original/2P4VyZ.png"
-                            style="cursor: pointer; max-width: 100%; vertical-align: middle; height: auto !important;"></a>
-                    </h1>
-                    <p><strong>If you enjoyed the demo, please consider following the project for updates or leaving
-                        your feedback below<br></strong>
-                    </p>
-                    <h3>Reach Us & Check Out</h3>
-                    <p><a href="https://store.steampowered.com/app/3863030?utm_source=itchio"></a>
-                    </p>
-                    <ul>
-                        <li><a
-                                href="https://www.instagram.com/wisemonkees?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
-                        </li>
-                        <li><a href="https://www.youtube.com/@WiseMonkeES">Youtube</a>
-                        </li>
-                        <li><a href="https://store.steampowered.com/app/3863030?utm_source=wm_website">Steam</a>
-                        </li>
-                    </ul>
-                    <p><small>Thank you for supporting.</small>
-                    </p>
-                </div>
-            </div>
-            <div class="row" style="margin-top:20px; margin-bottom:20px;">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header" style="background-color:var(--bg-accent);" align="left">
-                            <b>Genres</b>
-                        </div>
-                        <div class="card-body" style="background-color:var(--bg-secondary);">
-                            <a href="#" style="color:var(--text-secondary)">Puzzle</a>,
-                            <a href="#" style="color:var(--text-secondary);">Chess</a>,
-                            <a href="#" style="color:var(--text-secondary);">Casual</a>,
-                            <a href="#" style="color:var(--text-secondary);">Pixel Art</a>,
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header" style="background-color:var(--bg-accent);" align="left">
-                            <b>Features</b>
-                        </div>
-                        <div class="card-body" style="background-color:var(--bg-secondary);">
-                            <a href="#" style="color:var(--text-secondary);">Achievements</a>,
-                            <a href="#" style="color:var(--text-secondary);">Cloud Saves</a>,
-                            <a href="#" style="color:var(--text-secondary);">Single Player</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row text-left" align="left" style="margin-top:20px; margin-bottom:20px;">
-                <h2>Follow Us</h2>
-                <div align="center">
-                    <a href="https://wisemonkees.itch.io/mate-morphosis" target="_blank"
-                        style="font-size:48px; color:#FFF; margin-right:20px;"><i class="fa-brands fa-itch-io"></i></a>
-                    <a href="https://www.youtube.com/@WiseMonkeES" target="_blank"
-                        style="font-size:48px; color:#FFF; margin-right:20px;"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website"
-                        style="font-size:48px; color:#FFF; margin-right:20px;"><i
-                            class="fa-brands fa-steam"></i></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-xl-3 col-xxl-3 col-xs-12 col-sm-12 col-md-12 text-center">
-            <div class="row">
-                <div>
-                    <img src="../src/mm/mate_morphosisLogo.png" style="max-width:300px; max-height:150px;"/>
-                </div>
-            </div>
-            <div class="card" style="margin-top:20px; max-width: 300px">
-                <div class="card-body" style="background-color:var(--bg-secondary);">
-                    <div class="row text-start">
-                        <p>
-                            Mate Morphosis is a pixel art, chess-inspired puzzle game built around the concept of
-                            becoming the piece you capture. Outsmart each board, adapt to evolving mechanics, and hunt
-                            down the rival king across every stage.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <p style="margin-top:20px;">Coming Soon...</p>
-            <div class="d-grid gap-2">
-                <button type="button" onclick= "location.href='https://store.steampowered.com/app/3863030?utm_source=wm-website'" class="btn btn-lg" style="background-color: var(--accent-primary)"><i
-                        class="fa-solid fa-heart"></i> Add to
-                    Wishlist
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;" class="game-content">
+        <!-- Main Column -->
+        <div>
+            <!-- Web Demo Box -->
+            <div class="retro-box" style="padding: 12px; text-align: center;">
+                <button onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';"
+                    class="btn btn-cyan" style="width: 100%; height: 260px; font-size: 1rem;"
+                >
+                    <i class="fas fa-play"></i> Run Web Demo (itch.io)
                 </button>
+
+                <iframe id="game-frame" frameborder="0" 
+                    src="https://itch.io/embed-upload/14939415?color=1a1a2e" 
+                    allowfullscreen width="100%" height="480"
+                    style="display:none; border-radius: 4px; border: 2px solid var(--border-color);"
+                >
+                </iframe>
             </div>
-            <table class="table" style="margin-top:20px; --bs-table-bg: var(--bg-secondary);">
-                <tr>
-                    <td>Developer</td>
-                    <td><a href="https://www.wisemonkees.com" target="_blank" style="color:#FFF;">Wise Monke
-                        Entertainment Studio</a></td>
-                </tr>
-                <tr>
-                    <td>Publisher</td>
-                    <td>
-                        <a href="https://www.wisemonkees.com" target="_blank" style="color:#FFF;">Wise Monke
-                            Entertainment Studio</a>,
-                    </td>
-                </tr>
-                <tr>
-                    <td>Release Date</td>
-                    <td>November 2025</td>
-                </tr>
-                <tr>
-                    <td>Platforms</td>
-                    <td>
-                        <i class="fa-brands fa-windows"></i>
-                        <i class="fa-brands fa-apple"></i>
-                        <i class="fa-brands fa-linux"></i>
-                    </td>
-                </tr>
-            </table>
+
+            <!-- About Content -->
+            <div class="retro-box">
+                <h2 style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 12px;">> About Mate'Morphosis</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-family: 'Inter', sans-serif; margin-bottom: 16px;">
+                    <strong>BECOME WHAT YOU CAPTURE.</strong><br>
+                    Mate'Morphosis is a chess puzzle game where you navigate one piece to capture the enemy queen. Every capture transforms you into the piece you just took. Plan moves ahead, plot sequences, and master evolving puzzle mechanics.
+                </p>
+                <p style="color: var(--accent-amber); font-weight: 700;">Developed in collaboration with Bruder Studio.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Key Features</h3>
+                <ul style="color: var(--text-secondary); font-family: 'Inter', sans-serif; line-height: 1.8; padding-left: 20px;">
+                    <li><b>Morph:</b> Pawns become knights, knights become bishops — movement evolves with every capture.</li>
+                    <li><b>Evolving Mechanics:</b> Surprises beyond classic chess keep boards exciting from start to Mate.</li>
+                    <li><b>Hand-crafted Challenge:</b> Steady difficulty curve with clean, readable pixel art.</li>
+                    <li><b>Instant Learning Loop:</b> Snappy restarts and fast puzzle pacing.</li>
+                </ul>
+
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Controls</h3>
+                <p style="color: var(--text-secondary); font-family: 'Inter', sans-serif;">Mouse & Keyboard / Gamepad & Touch Support</p>
+            </div>
+
+            <!-- Screenshot Gallery -->
+            <div class="retro-box">
+                <h3 style="font-size: 1.1rem; color: var(--accent-secondary); margin-bottom: 12px;">// Screenshots</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <img src="../src/mm/ag5oUd.png" alt="Mate'Morphosis Gameplay 1" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
+                    <img src="../src/mm/ui79xa.png" alt="Mate'Morphosis Gameplay 2" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
+                    <img src="../src/mm/CqofK5.png" alt="Mate'Morphosis Gameplay 3" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
+                    <img src="../src/mm/ss4.png" alt="Mate'Morphosis Gameplay 4" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="retro-box">
+                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 12px;">Supported Languages</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif;">
+                    <b>TEXT & UI:</b> English, French, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Japanese, Korean, Russian, Turkish
+                </p>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+            <div class="retro-box" style="text-align: center;">
+                <img src="../src/mm/mate_morphosisLogo.png" alt="Mate'Morphosis Logo" style="max-width: 100%; height: auto; margin-bottom: 16px;"/>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif; margin-bottom: 20px;">
+                    Pixel art chess-inspired puzzle game. Become the piece you capture.
+                </p>
+
+                <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">
+                    <i class="fab fa-steam"></i> Play on Steam
+                </a>
+                <a href="https://wisemonkees.itch.io/mate-morphosis" target="_blank" rel="noopener" class="btn btn-cyan" style="width: 100%;">
+                    <i class="fab fa-itch-io"></i> itch.io Demo
+                </a>
+            </div>
+
+            <div class="retro-box">
+                <h3 style="font-size: 1rem; color: var(--accent-secondary); margin-bottom: 12px;">// Metadata</h3>
+                <table class="retro-table">
+                    <tr>
+                        <td>Developers</td>
+                        <td>WiseMonkeES, Bruder Studio</td>
+                    </tr>
+                    <tr>
+                        <td>Publisher</td>
+                        <td>Wise Monke Entertainment Studio</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date</td>
+                        <td>9 Jan, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Platforms</td>
+                        <td>
+                            <i class="fab fa-windows" title="Windows"></i>
+                            <i class="fab fa-apple" title="Mac"></i>
+                            <i class="fab fa-linux" title="Linux"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="retro-box" style="text-align: center;">
+                <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">Share & Follow</h3>
+                <div class="social-icons" style="justify-content: center;">
+                    <a href="https://wisemonkees.itch.io/mate-morphosis" target="_blank" rel="noopener"><i class="fab fa-itch-io"></i></a>
+                    <a href="https://www.youtube.com/@wisemonkees" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    <a href="https://store.steampowered.com/app/3863030?utm_source=wm-website" target="_blank" rel="noopener"><i class="fab fa-steam"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!--sss="row" style="padding:20px;" align="center">-->
-<!--sDOT Games ®, Unbelievers ® are registered trademarks of 2DOT Software LLC © 2DOT Games All rights reserved.-->
-<!--sAll other copyrights and trademarks are the property of their respective owners.</p>-->
-<!--s-->
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Screenshot">
 </div>
+
+<script>
+    function toggleMobileNav() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    }
+
+    function openLightbox(src) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightboxImg');
+        if (lightbox && img) {
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.querySelectorAll('.screenshot-zoomable').forEach(img => {
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openLightbox(img.src);
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Links | Wise Monke Entertainment Studio</title>
+    <meta name="description" content="Official links and contact hub for Wise Monke Entertainment Studio games, Steam pages, Discord community, and social channels.">
+    <meta name="theme-color" content="#0c0e14">
+    <link rel="icon" type="image/png" href="src/KurumsalYazısız.png">
+    <link rel="apple-touch-icon" href="src/KurumsalYazısız.png">
+
+    <!-- Open Graph / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wisemonkees.com/links.html">
+    <meta property="og:title" content="Wise Monke Studio | Contact & Links">
+    <meta property="og:description" content="Play our games, join our Discord community, and follow our projects.">
+    <meta property="og:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wisemonke_es">
+    <meta name="twitter:title" content="Wise Monke Studio | Contact & Links">
+    <meta name="twitter:description" content="Play our games, join our Discord community, and follow our projects.">
+    <meta name="twitter:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .linktree-body {
+            background-color: var(--bg-main);
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 16px 60px;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .linktree-container {
+            width: 100%;
+            max-width: 580px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .lt-profile {
+            margin-bottom: 28px;
+        }
+
+        .lt-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 6px;
+            border: 2px solid var(--accent-primary);
+            margin: 0 auto 16px;
+            box-shadow: var(--pixel-shadow);
+            object-fit: contain;
+            background: var(--bg-secondary);
+            padding: 8px;
+        }
+
+        .lt-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .lt-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .lt-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            max-width: 440px;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lt-section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            margin: 28px 0 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .lt-section-title::before,
+        .lt-section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .lt-links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .lt-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            padding: 14px 18px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.1s ease;
+            box-shadow: var(--pixel-shadow);
+        }
+
+        .lt-card:hover {
+            transform: translate(2px, 2px);
+            border-color: var(--accent-secondary);
+            box-shadow: var(--pixel-shadow-sm);
+            background: var(--bg-card-hover);
+        }
+
+        .lt-card-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+        }
+
+        .lt-card-icon {
+            font-size: 1.4rem;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-primary);
+            flex-shrink: 0;
+        }
+
+        .lt-card-text h4 {
+            font-size: 0.95rem;
+            margin: 0;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .lt-card-text p {
+            font-size: 0.8rem;
+            margin: 2px 0 0;
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lt-card-arrow {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .lt-card:hover .lt-card-arrow {
+            color: var(--accent-secondary);
+        }
+
+        /* Game Card Specials */
+        .lt-game-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            padding: 18px;
+            text-align: left;
+            margin-bottom: 14px;
+            box-shadow: var(--pixel-shadow);
+            transition: border-color 0.15s ease;
+        }
+
+        .lt-game-card:hover {
+            border-color: var(--accent-secondary);
+        }
+
+        .lt-game-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .lt-game-header h3 {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .lt-game-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            line-height: 1.5;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .lt-game-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .lt-game-actions a {
+            flex: 1;
+            min-width: 120px;
+            padding: 8px 12px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-transform: uppercase;
+            border: 2px solid;
+            transition: all 0.1s ease;
+        }
+
+        .lt-btn-steam {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+            box-shadow: var(--pixel-shadow-sm);
+        }
+
+        .lt-btn-steam:hover {
+            background: #e02456;
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        .lt-btn-itch {
+            background: var(--accent-secondary);
+            border-color: var(--accent-secondary);
+            color: #0c0e14;
+            box-shadow: var(--pixel-shadow-sm);
+        }
+
+        .lt-btn-itch:hover {
+            background: #00d4e3;
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        .lt-btn-details {
+            background: var(--bg-main);
+            color: var(--text-secondary);
+            border-color: var(--border-color);
+            box-shadow: var(--pixel-shadow-sm);
+        }
+
+        .lt-btn-details:hover {
+            color: var(--text-primary);
+            border-color: var(--accent-secondary);
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        /* Social Icons Grid */
+        .lt-social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .lt-social-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 4px;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            text-decoration: none;
+            box-shadow: var(--pixel-shadow-sm);
+            transition: all 0.1s ease;
+        }
+
+        .lt-social-btn:hover {
+            color: #fff;
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+
+        .lt-footer {
+            margin-top: 36px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .lt-footer a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="linktree-body">
+
+    <div class="linktree-container">
+
+        <!-- Profile Header -->
+        <div class="lt-profile">
+            <img src="src/KurumsalYazısız.png" alt="Wise Monke Logo" class="lt-avatar">
+            <h1 class="lt-title">Wise Monke Studio</h1>
+            <div class="lt-subtitle">@WiseMonkeES</div>
+            <p class="lt-desc">Never just another game. Crafting memorable, distinct, and innovative indie games.</p>
+        </div>
+
+        <!-- Official Website Button -->
+        <div class="lt-links-group">
+            <a href="index.html" class="lt-card">
+                <div class="lt-card-left">
+                    <div class="lt-card-icon"><i class="fas fa-globe"></i></div>
+                    <div class="lt-card-text">
+                        <h4>Official Website</h4>
+                        <p>wisemonkees.com</p>
+                    </div>
+                </div>
+                <div class="lt-card-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <!-- Games Section -->
+        <div class="lt-section-title">Games & Projects</div>
+
+        <!-- Planet No More -->
+        <div class="lt-game-card">
+            <div class="lt-game-header">
+                <h3>Planet No More</h3>
+                <span class="status-badge soon"><span class="status-dot"></span> Releasing Q4 2026</span>
+            </div>
+            <p class="lt-game-desc">Arcade-incremental planet destruction game. Shatter celestial bodies and upgrade
+                your orbiting fleet.</p>
+            <div class="lt-game-actions">
+                <a href="https://store.steampowered.com/app/4456110?utm_source=wm-linktree" target="_blank"
+                    rel="noopener" class="lt-btn-steam">
+                    <i class="fab fa-steam"></i> Steam Wishlist
+                </a>
+                <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener" class="lt-btn-itch">
+                    <i class="fab fa-itch-io"></i> Demo
+                </a>
+                <a href="pnm" class="lt-btn-details">
+                    <i class="fas fa-info-circle"></i> Info
+                </a>
+            </div>
+        </div>
+
+        <!-- Mate'Morphosis -->
+        <div class="lt-game-card">
+            <div class="lt-game-header">
+                <h3>Mate'Morphosis</h3>
+                <span class="status-badge live"><span class="status-dot"></span> Available Now</span>
+            </div>
+            <p class="lt-game-desc">Pixel art chess puzzle game built around the concept of becoming the piece you
+                capture.</p>
+            <div class="lt-game-actions">
+                <a href="https://store.steampowered.com/app/3863030?utm_source=wm-linktree" target="_blank"
+                    rel="noopener" class="lt-btn-steam">
+                    <i class="fab fa-steam"></i> Steam Store
+                </a>
+                <a href="https://wisemonkees.itch.io/mate-morphosis" target="_blank" rel="noopener" class="lt-btn-itch">
+                    <i class="fab fa-itch-io"></i> Demo
+                </a>
+                <a href="mm" class="lt-btn-details">
+                    <i class="fas fa-info-circle"></i> Info
+                </a>
+            </div>
+        </div>
+
+        <!-- Thus Spoke The Donke -->
+        <div class="lt-game-card">
+            <div class="lt-game-header">
+                <h3>Thus Spoke The Donke</h3>
+                <span class="status-badge soon"><span class="status-dot"></span> In Development</span>
+            </div>
+            <p class="lt-game-desc">Stealth-action sandbox with sharp satire and complete freedom of approach under The
+                Great Donke.</p>
+            <div class="lt-game-actions">
+                <a href="https://store.steampowered.com/app/2835760?utm_source=wm-linktree" target="_blank"
+                    rel="noopener" class="lt-btn-steam">
+                    <i class="fab fa-steam"></i> Steam Wishlist
+                </a>
+                <a href="tstd" class="lt-btn-details">
+                    <i class="fas fa-info-circle"></i> Info
+                </a>
+            </div>
+        </div>
+
+        <!-- Community & Socials -->
+        <div class="lt-section-title">Socials & Hubs</div>
+
+        <div class="lt-social-grid">
+            <a href="https://discord.gg/RRXcggnZGb" target="_blank" rel="noopener" class="lt-social-btn"
+                title="Discord Community">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://youtube.com/@wisemonkees" target="_blank" rel="noopener" class="lt-social-btn"
+                title="YouTube Channel">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/wisemonke_es" target="_blank" rel="noopener" class="lt-social-btn"
+                title="X / Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/wisemonkees" target="_blank" rel="noopener" class="lt-social-btn"
+                title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://store.steampowered.com/dev/wisemonkees" target="_blank" rel="noopener"
+                class="lt-social-btn" title="Steam Developer Hub">
+                <i class="fab fa-steam"></i>
+            </a>
+            <a href="https://wisemonkees.itch.io" target="_blank" rel="noopener" class="lt-social-btn"
+                title="itch.io Page">
+                <i class="fab fa-itch-io"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wisemonkees" target="_blank" rel="noopener" class="lt-social-btn"
+                title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:contact@wisemonkees.com" class="lt-social-btn" title="Email Us">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="lt-links-group">
+            <a href="https://discord.gg/RRXcggnZGb" target="_blank" rel="noopener" class="lt-card">
+                <div class="lt-card-left">
+                    <div class="lt-card-icon" style="color: #5865f2;"><i class="fab fa-discord"></i></div>
+                    <div class="lt-card-text">
+                        <h4>Join Our Discord</h4>
+                        <p>Community news, playtests & dev chat</p>
+                    </div>
+                </div>
+                <div class="lt-card-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="https://store.steampowered.com/dev/wisemonkees" target="_blank" rel="noopener" class="lt-card">
+                <div class="lt-card-left">
+                    <div class="lt-card-icon" style="color: #00f0ff;"><i class="fab fa-steam"></i></div>
+                    <div class="lt-card-text">
+                        <h4>Steam Developer Page</h4>
+                        <p>Follow Wise Monke Entertainment Studio on Steam</p>
+                    </div>
+                </div>
+                <div class="lt-card-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+
+            <a href="mailto:contact@wisemonkees.com" class="lt-card">
+                <div class="lt-card-left">
+                    <div class="lt-card-icon" style="color: var(--accent-amber);"><i class="fas fa-envelope"></i></div>
+                    <div class="lt-card-text">
+                        <h4>Business & Press Contact</h4>
+                        <p>contact@wisemonkees.com</p>
+                    </div>
+                </div>
+                <div class="lt-card-arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="lt-footer">
+            © 2026 <a href="index.html">Wise Monke Entertainment Studio</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
