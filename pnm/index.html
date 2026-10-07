@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Planet No More | Wise Monke Entertainment Studio</title>
-    <meta name="description" content="Planet No More is an arcade-incremental experience where you pulverize celestial bodies with your orbiting fleet.">
+    <meta name="description"
+        content="Planet No More is an arcade-incremental experience where you pulverize celestial bodies with your orbiting fleet.">
     <meta name="theme-color" content="#0c0e14">
     <link rel="icon" type="image/png" href="../src/KurumsalYazısız.png">
     <link rel="apple-touch-icon" href="../src/KurumsalYazısız.png">
@@ -13,199 +15,231 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.wisemonkees.com/pnm/">
     <meta property="og:title" content="Planet No More - Arcade-Incremental Game">
-    <meta property="og:description" content="Pulverize celestial bodies, scavenge space resources, and upgrade your fleet. Wishlist now on Steam.">
+    <meta property="og:description"
+        content="Pulverize celestial bodies, scavenge space resources, and upgrade your fleet. Wishlist now on Steam.">
     <meta property="og:image" content="https://www.wisemonkees.com/src/pnm/pnm_ss01.png">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@wisemonke_es">
     <meta name="twitter:title" content="Planet No More | Wise Monke Entertainment Studio">
-    <meta name="twitter:description" content="Pulverize celestial bodies, scavenge space resources, and upgrade your fleet. Wishlist now on Steam.">
+    <meta name="twitter:description"
+        content="Pulverize celestial bodies, scavenge space resources, and upgrade your fleet. Wishlist now on Steam.">
     <meta name="twitter:image" content="https://www.wisemonkees.com/src/pnm/pnm_ss01.png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-<nav>
-    <div class="container">
-        <a href="../index.html" class="logo-container">
-            <img src="../src/KurumsalYazısız.png" alt="Wise Monke Studio Logo" class="studio-logo">
-            <span class="logo-text">WiseMonke<span>ES</span></span>
-        </a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html#home">Home</a></li>
-            <li><a href="../index.html#games" class="active">Games</a></li>
-            <li><a href="../index.html#about">About</a></li>
-            <li><a href="../links.html">Contact</a></li>
-        </ul>
-        <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
-    </div>
-</nav>
+    <nav>
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../src/KurumsalYazısız.png" alt="Wise Monke Entertainment Studio Logo" class="studio-logo">
+                <span class="logo-text">WiseMonke<span>ES</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#games" class="active">Games</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../links.html">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
+        </div>
+    </nav>
 
-<div class="container" style="padding-top: 90px; padding-bottom: 60px;">
-    
-    <div style="margin-bottom: 24px;">
-        <span class="status-badge soon"><span class="status-dot"></span> Releasing Q4 2026</span>
-        <h1 style="font-size: 2.2rem; margin-top: 8px;">// Planet No More</h1>
-    </div>
+    <div class="container" style="padding-top: 90px; padding-bottom: 60px;">
 
-    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;" class="game-content">
-        <!-- Main Column -->
-        <div>
-            <!-- Web Demo Box -->
-            <div class="retro-box" style="padding: 12px; text-align: center;">
-                <button onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';"
-                    class="btn btn-cyan" style="width: 100%; height: 260px; font-size: 1rem;"
-                >
-                    <i class="fas fa-play"></i> Run Web Demo (itch.io)
-                </button>
+        <div style="margin-bottom: 24px;">
+            <span class="status-badge soon"><span class="status-dot"></span> Releasing 5 Dec, 2026</span>
+            <h1 style="font-size: 2.4rem; margin-top: 8px; font-weight: 800;">Planet No More</h1>
+        </div>
 
-                <iframe id="game-frame" frameborder="0" 
-                    src="https://itch.io/embed-upload/17609235?color=510ac4" 
-                    allowfullscreen width="100%" height="480"
-                    style="display:none; border-radius: 4px; border: 2px solid var(--border-color);"
-                >
-                </iframe>
-            </div>
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;" class="game-content">
+            <!-- Main Column -->
+            <div>
+                <!-- Web Demo Box -->
+                <div class="retro-box" style="padding: 12px; text-align: center;">
+                    <button
+                        onclick="document.getElementById('game-frame').style.display='block'; this.style.display='none';"
+                        class="btn btn-cyan" style="width: 100%; height: 260px; font-size: 1rem;">
+                        <i class="fas fa-play"></i> Run Web Demo (itch.io)
+                    </button>
 
-            <!-- About Content -->
-            <div class="retro-box">
-                <h2 style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 12px;">> About Planet No More</h2>
-                <p style="color: var(--text-secondary); line-height: 1.8; font-family: 'Inter', sans-serif; margin-bottom: 16px;">
-                    <strong>Planet No More</strong> is an arcade-incremental game where you DESTROY planets! 
-                    Build a fleet, upgrade weapons, max out your skill tree, and destroy your target slowly. 
-                    As your cannons tear through the planet's surface, it dynamically shatters and withers away, 
-                    scattering valuable resources into the void of space for you to scavenge before your fuel runs out.
-                </p>
+                    <iframe id="game-frame" frameborder="0" src="https://itch.io/embed-upload/17609235?color=510ac4"
+                        allowfullscreen width="100%" height="480"
+                        style="display:none; border-radius: 4px; border: 2px solid var(--border-color);">
+                    </iframe>
+                </div>
 
-                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Key Features</h3>
-                <ul style="color: var(--text-secondary); font-family: 'Inter', sans-serif; line-height: 1.8; padding-left: 20px;">
-                    <li><b>Dynamic 3D Destruction:</b> Rotating 3D planets realistically shatter and erode under bombardment.</li>
-                    <li><b>Expansive Meta-Progression:</b> Deep upgrade tech tree for firepower, fuel capacity, and magnet scavenging.</li>
-                    <li><b>Fuel Management:</b> Race against a depleting fuel gauge to optimize run efficiency.</li>
-                    <li><b>Celestial Escalation:</b> Demolish celestials to their core to harvest Celestial Cores and unlock new galaxy sectors.</li>
-                </ul>
+                <!-- About Content -->
+                <div class="retro-box">
+                    <h2 style="font-size: 1.4rem; color: var(--accent-secondary); margin-bottom: 12px;">> About Planet
+                        No More</h2>
+                    <p
+                        style="color: var(--text-secondary); line-height: 1.8; font-family: 'Inter', sans-serif; margin-bottom: 16px;">
+                        <strong>Planet No More</strong> is an arcade-incremental game where you DESTROY planets!
+                        Build a fleet, upgrade weapons, max out your skill tree, and destroy your target slowly.
+                        As your cannons tear through the planet's surface, it dynamically shatters and withers away,
+                        scattering valuable resources into the void of space for you to scavenge before your fuel runs
+                        out.
+                    </p>
 
-                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Controls</h3>
-                <p style="color: var(--text-secondary); font-family: 'Inter', sans-serif;">Mouse & Keyboard / Gamepad & Touch Support</p>
-            </div>
+                    <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Key Features</h3>
+                    <ul
+                        style="color: var(--text-secondary); font-family: 'Inter', sans-serif; line-height: 1.8; padding-left: 20px;">
+                        <li><b>Dynamic 3D Destruction:</b> Rotating 3D planets realistically shatter and erode under
+                            bombardment.</li>
+                        <li><b>Expansive Meta-Progression:</b> Deep upgrade tech tree for firepower, fuel capacity, and
+                            magnet scavenging.</li>
+                        <li><b>Fuel Management:</b> Race against a depleting fuel gauge to optimize run efficiency.</li>
+                        <li><b>Celestial Escalation:</b> Demolish celestials to their core to harvest Celestial Cores
+                            and unlock new galaxy sectors.</li>
+                    </ul>
 
-            <!-- Screenshot Gallery -->
-            <div class="retro-box">
-                <h3 style="font-size: 1.1rem; color: var(--accent-secondary); margin-bottom: 12px;">// Screenshots</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-                    <img src="../src/pnm/pnm_ss01.png" alt="Planet No More Screenshot 1" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
-                    <img src="../src/pnm/pnm_ss02.png" alt="Planet No More Screenshot 2" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
-                    <img src="../src/pnm/pnm_ss03.png" alt="Planet No More Screenshot 3" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
-                    <img src="../src/pnm/pnm_ss04.png" alt="Planet No More Screenshot 4" class="screenshot-zoomable" style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);" loading="lazy">
+                    <h3 style="font-size: 1.1rem; color: var(--text-primary); margin: 20px 0 10px;">Controls</h3>
+                    <p style="color: var(--text-secondary); font-family: 'Inter', sans-serif;">Mouse & Keyboard /
+                        Gamepad & Touch Support</p>
+                </div>
+
+                <!-- Screenshot Gallery -->
+                <div class="retro-box">
+                    <h3 style="font-size: 1.1rem; color: var(--accent-secondary); margin-bottom: 12px;">// Screenshots
+                    </h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <img src="../src/pnm/pnm_ss01.png" alt="Planet No More Screenshot 1" class="screenshot-zoomable"
+                            style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);"
+                            loading="lazy">
+                        <img src="../src/pnm/pnm_ss02.png" alt="Planet No More Screenshot 2" class="screenshot-zoomable"
+                            style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);"
+                            loading="lazy">
+                        <img src="../src/pnm/pnm_ss03.png" alt="Planet No More Screenshot 3" class="screenshot-zoomable"
+                            style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);"
+                            loading="lazy">
+                        <img src="../src/pnm/pnm_ss04.png" alt="Planet No More Screenshot 4" class="screenshot-zoomable"
+                            style="width: 100%; border-radius: 4px; border: 2px solid var(--border-color);"
+                            loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Genres & Languages -->
+                <div class="retro-box">
+                    <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 12px;">Supported Languages
+                    </h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif;">
+                        <b>TEXT & UI:</b> English, French, German, Spanish - Spain, Japanese, Korean, Portuguese -
+                        Brazil, Russian, Simplified Chinese, Turkish
+                    </p>
                 </div>
             </div>
 
-            <!-- Genres & Languages -->
-            <div class="retro-box">
-                <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 12px;">Supported Languages</h3>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif;">
-                    <b>TEXT & UI:</b> English, French, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Turkish
-                </p>
-            </div>
-        </div>
+            <!-- Sidebar -->
+            <div>
+                <div class="retro-box" style="text-align: center;">
+                    <img src="../src/pnm/pnm_logo.png" alt="Planet No More Logo"
+                        style="max-width: 100%; height: auto; margin-bottom: 16px;" />
+                    <p
+                        style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif; margin-bottom: 20px;">
+                        Arcade-incremental planet destruction. Shatter celestial bodies and upgrade your fleet.
+                    </p>
 
-        <!-- Sidebar -->
-        <div>
-            <div class="retro-box" style="text-align: center;">
-                <img src="../src/pnm/pnm_logo.png" alt="Planet No More Logo" style="max-width: 100%; height: auto; margin-bottom: 16px;"/>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; font-family: 'Inter', sans-serif; margin-bottom: 20px;">
-                    Arcade-incremental planet destruction. Shatter celestial bodies and upgrade your fleet.
-                </p>
+                    <a href="https://store.steampowered.com/app/4456110?utm_source=wm-website" target="_blank"
+                        rel="noopener" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">
+                        <i class="fab fa-steam"></i> Steam Wishlist
+                    </a>
+                    <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener"
+                        class="btn btn-cyan" style="width: 100%;">
+                        <i class="fab fa-itch-io"></i> itch.io Page
+                    </a>
+                </div>
 
-                <a href="https://store.steampowered.com/app/4456110?utm_source=wm-website" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">
-                    <i class="fab fa-steam"></i> Steam Wishlist
-                </a>
-                <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener" class="btn btn-cyan" style="width: 100%;">
-                    <i class="fab fa-itch-io"></i> itch.io Page
-                </a>
-            </div>
+                <div class="retro-box">
+                    <h3 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 12px;">Metadata</h3>
+                    <table class="retro-table">
+                        <tr>
+                            <td>Developer</td>
+                            <td>Wise Monke Entertainment Studio</td>
+                        </tr>
+                        <tr>
+                            <td>Publishers</td>
+                            <td>Rogue Duck Interactive, Gamersky Games</td>
+                        </tr>
+                        <tr>
+                            <td>Release Date</td>
+                            <td>5 Dec, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Platforms</td>
+                            <td>
+                                <i class="fab fa-windows" title="Windows"></i>
+                                <i class="fab fa-apple" title="Mac"></i>
+                                <i class="fab fa-linux" title="Linux"></i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div class="retro-box">
-                <h3 style="font-size: 1rem; color: var(--accent-secondary); margin-bottom: 12px;">// Metadata</h3>
-                <table class="retro-table">
-                    <tr>
-                        <td>Developer</td>
-                        <td>Wise Monke Entertainment Studio</td>
-                    </tr>
-                    <tr>
-                        <td>Publishers</td>
-                        <td>Rogue Duck Interactive, Gamersky Games</td>
-                    </tr>
-                    <tr>
-                        <td>Release Date</td>
-                        <td>Q4 2026</td>
-                    </tr>
-                    <tr>
-                        <td>Platforms</td>
-                        <td>
-                            <i class="fab fa-windows" title="Windows"></i>
-                            <i class="fab fa-apple" title="Mac"></i>
-                            <i class="fab fa-linux" title="Linux"></i>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="retro-box" style="text-align: center;">
-                <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">Share & Follow</h3>
-                <div class="social-icons" style="justify-content: center;">
-                    <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener"><i class="fab fa-itch-io"></i></a>
-                    <a href="https://www.youtube.com/@wisemonkees" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                    <a href="https://store.steampowered.com/app/4456110?utm_source=wm-website" target="_blank" rel="noopener"><i class="fab fa-steam"></i></a>
+                <div class="retro-box" style="text-align: center;">
+                    <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">Share & Follow</h3>
+                    <div class="social-icons" style="justify-content: center;">
+                        <a href="https://wisemonkees.itch.io/planet-no-more" target="_blank" rel="noopener"><i
+                                class="fab fa-itch-io"></i></a>
+                        <a href="https://www.youtube.com/@wisemonkees" target="_blank" rel="noopener"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://store.steampowered.com/app/4456110?utm_source=wm-website" target="_blank"
+                            rel="noopener"><i class="fab fa-steam"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Screenshot">
-</div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed Screenshot">
+    </div>
 
-<script>
-    function toggleMobileNav() {
-        const navLinks = document.getElementById('navLinks');
-        navLinks.classList.toggle('active');
-    }
-
-    function openLightbox(src) {
-        const lightbox = document.getElementById('lightbox');
-        const img = document.getElementById('lightboxImg');
-        if (lightbox && img) {
-            img.src = src;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
+    <script>
+        function toggleMobileNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
         }
-    }
 
-    function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        if (lightbox) {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            if (lightbox && img) {
+                img.src = src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         }
-    }
 
-    document.querySelectorAll('.screenshot-zoomable').forEach(img => {
-        img.addEventListener('click', (e) => {
-            e.stopPropagation();
-            openLightbox(img.src);
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.querySelectorAll('.screenshot-zoomable').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openLightbox(img.src);
+            });
         });
-    });
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeLightbox();
-    });
-</script>
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
 </body>
+
 </html>

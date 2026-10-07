@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Links | Wise Monke Entertainment Studio</title>
-    <meta name="description" content="Official links and contact hub for Wise Monke Entertainment Studio games, Steam pages, Discord community, and social channels.">
+    <meta name="description"
+        content="Official links and contact hub for Wise Monke Entertainment Studio games, Steam pages, Discord community, and social channels.">
     <meta name="theme-color" content="#0c0e14">
     <link rel="icon" type="image/png" href="../src/KurumsalYazısız.png">
     <link rel="apple-touch-icon" href="../src/KurumsalYazısız.png">
@@ -13,77 +14,85 @@
     <!-- Open Graph / Discord -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.wisemonkees.com/links/">
-    <meta property="og:title" content="Wise Monke Studio | Contact & Links">
+    <meta property="og:title" content="Wise Monke Entertainment Studio | Contact & Links">
     <meta property="og:description" content="Play our games, join our Discord community, and follow our projects.">
     <meta property="og:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@wisemonke_es">
-    <meta name="twitter:title" content="Wise Monke Studio | Contact & Links">
+    <meta name="twitter:title" content="Wise Monke Entertainment Studio | Contact & Links">
     <meta name="twitter:description" content="Play our games, join our Discord community, and follow our projects.">
-    <meta name="twitter:image" content="https://www.wisemonkees.com/src/kurumsal-siyah-bg.jpg">
-
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .linktree-body {
             background-color: var(--bg-main);
-            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 24px 24px;
+            background-image:
+                radial-gradient(ellipse 90% 60% at 50% -15%, rgba(245, 158, 11, 0.08), transparent 70%),
+                radial-gradient(ellipse 60% 40% at 85% 30%, rgba(56, 189, 248, 0.03), transparent 60%);
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 40px 16px 60px;
-            font-family: 'Space Mono', monospace;
+            padding: 50px 16px 70px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-primary);
         }
 
         .linktree-container {
             width: 100%;
-            max-width: 580px;
+            max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
 
         .lt-profile {
-            margin-bottom: 28px;
+            margin-bottom: 32px;
         }
 
         .lt-avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 6px;
-            border: 2px solid var(--accent-primary);
+            width: 96px;
+            height: 96px;
+            border-radius: var(--radius-md);
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
             margin: 0 auto 16px;
-            box-shadow: var(--pixel-shadow);
             object-fit: contain;
-            background: var(--bg-secondary);
-            padding: 8px;
+            background: transparent;
+            padding: 0;
         }
 
         .lt-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
             margin-bottom: 4px;
+            letter-spacing: -0.02em;
         }
 
         .lt-subtitle {
             font-size: 0.9rem;
-            color: var(--accent-primary);
-            margin-bottom: 8px;
+            color: var(--accent-amber);
+            margin-bottom: 10px;
             font-weight: 700;
+            font-family: 'Space Mono', monospace;
         }
 
         .lt-desc {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--text-secondary);
-            max-width: 440px;
+            max-width: 460px;
             margin: 0 auto;
-            line-height: 1.5;
-            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
         }
 
         .lt-section-title {
@@ -91,11 +100,13 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             color: var(--text-muted);
-            margin: 28px 0 14px;
+            margin: 32px 0 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
         }
 
         .lt-section-title::before,
@@ -117,19 +128,19 @@
             align-items: center;
             justify-content: space-between;
             background: var(--bg-card);
-            border: 2px solid var(--border-color);
-            border-radius: 6px;
-            padding: 14px 18px;
+            border: 1px solid var(--border-card);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
             text-decoration: none;
             color: var(--text-primary);
-            transition: all 0.1s ease;
-            box-shadow: var(--pixel-shadow);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: var(--shadow-sm);
         }
 
         .lt-card:hover {
-            transform: translate(2px, 2px);
-            border-color: var(--accent-secondary);
-            box-shadow: var(--pixel-shadow-sm);
+            transform: translateY(-2px);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: var(--shadow-md);
             background: var(--bg-card-hover);
         }
 
@@ -331,7 +342,7 @@
         <!-- Profile Header -->
         <div class="lt-profile">
             <img src="../src/KurumsalYazısız.png" alt="Wise Monke Logo" class="lt-avatar">
-            <h1 class="lt-title">Wise Monke Studio</h1>
+            <h1 class="lt-title">Wise Monke Entertainment Studio</h1>
             <div class="lt-subtitle">@WiseMonkeES</div>
             <p class="lt-desc">Never just another game. Crafting memorable, distinct, and innovative indie games.</p>
         </div>
@@ -351,16 +362,15 @@
         </div>
 
         <!-- Games Section -->
-        <div class="lt-section-title">Games & Projects</div>
+        <div class="lt-section-title">Games</div>
 
         <!-- Planet No More -->
         <div class="lt-game-card">
             <div class="lt-game-header">
                 <h3>Planet No More</h3>
-                <span class="status-badge soon"><span class="status-dot"></span> Releasing Q4 2026</span>
+                <span class="status-badge soon"><span class="status-dot"></span> Releasing 5 Dec, 2026</span>
             </div>
-            <p class="lt-game-desc">Arcade-incremental planet destruction game. Shatter celestial bodies and upgrade
-                your orbiting fleet.</p>
+            <p class="lt-game-desc">An arcade-incremental game where you DESTROY planets! Build a fleet, upgrade weapons, and shatter planets to their cores.</p>
             <div class="lt-game-actions">
                 <a href="https://store.steampowered.com/app/4456110?utm_source=wm-linktree" target="_blank"
                     rel="noopener" class="lt-btn-steam">
