@@ -11,7 +11,7 @@
 
 :root {
     /* Natural Dark Studio Canvas */
-    --bg-main: #0c0d11;
+    --bg-main: #1e1e1e;
     --bg-secondary: #12141a;
     --bg-card: #161822;
     --bg-card-hover: #1c1e2b;
@@ -22,15 +22,15 @@
     --border-subtle: rgba(255, 255, 255, 0.05);
 
     /* Accents - Warm Primal Honey / Amber (Used tastefully for actions/highlights) */
-    --accent-primary: #e59e0c;
+    --accent-primary: #f85f8b;
     --accent-hover: #f5ab1b;
     --accent-amber: #e59e0c;
-    --accent-secondary: #60a5fa;
+    --accent-secondary: #a569ff;
     --accent-green: #34d399;
     --accent-discord: #5865F2;
 
     /* Text */
-    --text-primary: #f3f4f6;
+    --text-primary: #efefef;
     --text-secondary: #9ca3af;
     --text-muted: #6b7280;
 
