@@ -317,8 +317,8 @@ nav .container {
 .hero .description {
     font-size: clamp(1.05rem, 1.8vw, 1.2rem);
     color: var(--text-secondary);
-    max-width: 640px;
-    margin: 0 auto 32px;
+    width: 100%;
+    margin: 25px auto 50px;
     line-height: 1.6;
 }
 
