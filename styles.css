@@ -294,8 +294,8 @@ nav .container {
 }
 
 .hero-avatar {
-    width: 88px;
-    height: 88px;
+    width: 512px;
+    height: 512px;
     border-radius: var(--radius-md);
     object-fit: contain;
     background: transparent;
