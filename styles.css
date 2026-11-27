@@ -262,9 +262,6 @@ nav .container {
     font-family: 'Space Mono', monospace;
     font-size: 0.78rem;
     font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
     color: var(--text-secondary);
 }
 
@@ -276,11 +273,6 @@ nav .container {
     color: var(--accent-amber);
 }
 
-.status-dot {
-    width: 6px;
-    height: 6px;
-    background: currentColor;
-}
 
 /* ==========================================================================
    Hero
