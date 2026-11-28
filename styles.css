@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 /* ==========================================================================
-   Base & Natural Color Palette (Clean Indie Studio)
+   Base & colors
    ========================================================================== */
 *, *::before, *::after {
     margin: 0;
@@ -10,23 +10,22 @@
 }
 
 :root {
-    /* Natural Dark Studio Canvas */
+    /* Backgrounds */
     --bg-main: #1e1e1e;
     --bg-secondary: #12141a;
     --bg-card: #161822;
     --bg-card-hover: #1c1e2b;
-    --bg-nav: rgba(12, 13, 17, 0.92);
+    --bg-nav: #0c0d11;
 
-    /* Subtle Dividers (No loud or colored borders) */
+    /* Borders */
     --border-color: rgba(255, 255, 255, 0.07);
     --border-subtle: rgba(255, 255, 255, 0.05);
 
-    /* Accents - Warm Primal Honey / Amber (Used tastefully for actions/highlights) */
+    /* Accents */
     --accent-primary: #f85f8b;
     --accent-hover: #f5ab1b;
     --accent-amber: #e59e0c;
     --accent-secondary: #a569ff;
-    --accent-green: #34d399;
     --accent-discord: #5865F2;
 
     /* Text */
@@ -34,19 +33,19 @@
     --text-secondary: #9ca3af;
     --text-muted: #6b7280;
 
-    /* Natural Elevation */
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.6);
+    /* Shadows */
+    --shadow-card: 4px 4px 0 rgba(0, 0, 0, 0.5);
+    --shadow-hover: 4px 4px 0 rgba(0, 0, 0, 0.5);
 
     /* Radii */
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 14px;
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 4px;
     --radius-full: 9999px;
 
-    /* Backwards compatibility */
-    --pixel-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    --pixel-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+    /* Pixel shadows */
+    --pixel-shadow: 4px 4px 0 #000;
+    --pixel-shadow-sm: 2px 2px 0 #000;
 }
 
 html {
@@ -69,7 +68,7 @@ h1, h2, h3, h4, .studio-title {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     line-height: 1.2;
 }
 
@@ -84,7 +83,7 @@ h1, h2, h3, h4, .studio-title {
 }
 
 /* ==========================================================================
-   Navigation (Minimalist & Natural)
+   Navigation
    ========================================================================== */
 nav {
     position: fixed;
@@ -92,8 +91,6 @@ nav {
     left: 0;
     width: 100%;
     background: var(--bg-nav);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 14px 0;
     border-bottom: 1px solid var(--border-color);
@@ -128,7 +125,7 @@ nav .container {
     font-family: 'Outfit', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     color: #ffffff;
 }
 
@@ -178,7 +175,7 @@ nav .container {
 }
 
 /* ==========================================================================
-   Buttons & Pills (Clean & Solid)
+   Buttons
    ========================================================================== */
 .btn {
     font-family: 'Outfit', sans-serif;
@@ -193,8 +190,12 @@ nav .container {
     gap: 8px;
     cursor: pointer;
     border: none;
-    transition: background 0.15s ease, transform 0.15s ease;
+    transition: background 0.15s ease;
     white-space: nowrap;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
 }
 
 .btn-primary {
@@ -204,7 +205,6 @@ nav .container {
 
 .btn-primary:hover {
     background: var(--accent-hover);
-    transform: translateY(-1px);
 }
 
 .btn-secondary {
@@ -214,7 +214,6 @@ nav .container {
 
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.14);
-    transform: translateY(-1px);
 }
 
 .btn-steam {
@@ -224,7 +223,6 @@ nav .container {
 
 .btn-steam:hover {
     background: #2a3f5a;
-    transform: translateY(-1px);
 }
 
 .btn-cyan {
@@ -243,45 +241,41 @@ nav .container {
 
 .btn-discord:hover {
     background: #4752c4;
-    transform: translateY(-1px);
 }
 
-/* Subtle Tags & Badges (No loud colored outlines) */
+/* Tags & badges */
 .tag {
-    font-size: 0.78rem;
-    font-weight: 500;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.tag + .tag::before {
+    content: '/ ';
     color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.04);
-    padding: 3px 10px;
-    border-radius: var(--radius-sm);
 }
 
 .status-badge {
+    font-family: 'Space Mono', monospace;
     font-size: 0.78rem;
     font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
     color: var(--text-secondary);
 }
 
 .status-badge.live {
-    color: #34d399;
+    color: var(--accent-primary);
 }
 
 .status-badge.soon {
-    color: #fbbf24;
+    color: var(--accent-amber);
 }
 
-.status-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: currentColor;
-}
 
 /* ==========================================================================
-   Hero Section (Natural & Authentic Studio Intro)
+   Hero
    ========================================================================== */
 .hero {
     padding: 120px 0 60px;
@@ -308,7 +302,7 @@ nav .container {
 .hero h1 {
     font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-weight: 800;
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     color: #ffffff;
     margin-bottom: 16px;
     line-height: 1.1;
@@ -350,7 +344,7 @@ nav .container {
 }
 
 /* ==========================================================================
-   Games Section (Art-First & Natural Cards)
+   Games
    ========================================================================== */
 #games {
     padding: 60px 0 90px;
@@ -365,16 +359,13 @@ nav .container {
 .game-card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
+    border: 2px solid var(--border-color);
     overflow: hidden;
     box-shadow: var(--shadow-card);
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     align-items: stretch;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.game-card:hover {
-    box-shadow: var(--shadow-hover);
+    transition: box-shadow 0.2s ease;
 }
 
 .game-card.reverse {
@@ -408,11 +399,6 @@ nav .container {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.game-banner-box:hover img {
-    transform: scale(1.02);
 }
 
 .game-thumbs-grid {
@@ -434,11 +420,6 @@ nav .container {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.2s ease;
-}
-
-.game-thumb-box:hover img {
-    transform: scale(1.04);
 }
 
 /* Game Details */
@@ -446,7 +427,6 @@ nav .container {
     padding: 36px 32px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .game-status-line {
@@ -495,17 +475,18 @@ nav .container {
 }
 
 /* ==========================================================================
-   Trailer Section (Natural Video Frame)
+   Trailer
    ========================================================================== */
 .trailer-section {
     padding: 40px 0 80px;
 }
 
 .trailer-frame {
-    background: var(--bg-card);
+    background: none;
     border-radius: var(--radius-lg);
-    padding: 20px;
-    box-shadow: var(--shadow-card);
+    padding: 0;
+    box-shadow: none;
+    border: none;
 }
 
 .trailer-top-bar {
@@ -516,8 +497,9 @@ nav .container {
 }
 
 .trailer-top-bar h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
     color: #ffffff;
 }
 
@@ -544,7 +526,7 @@ nav .container {
 }
 
 /* ==========================================================================
-   About Section (Natural Story Paragraphs, No SaaS Cards)
+   About
    ========================================================================== */
 #about {
     padding: 70px 0 90px;
@@ -578,6 +560,7 @@ nav .container {
 .about-sidebar {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
+    border: 2px solid var(--border-color);
     padding: 30px;
     box-shadow: var(--shadow-card);
 }
@@ -593,6 +576,10 @@ nav .container {
     font-size: 0.92rem;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.about-sidebar p a {
+    color: var(--accent-primary);
 }
 
 /* ==========================================================================
@@ -652,7 +639,6 @@ footer {
     width: 100vw;
     height: 100vh;
     background: rgba(8, 9, 12, 0.95);
-    backdrop-filter: blur(10px);
     align-items: center;
     justify-content: center;
     padding: 24px;
@@ -698,6 +684,7 @@ footer {
 .retro-box {
     background: var(--bg-card);
     border-radius: var(--radius-md);
+    border: 2px solid var(--border-color);
     box-shadow: var(--shadow-card);
     padding: 24px;
     margin-bottom: 24px;
@@ -732,7 +719,7 @@ footer {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
 }
 
 .game-content.reverse {
@@ -783,12 +770,21 @@ footer {
     }
 
     .game-card.reverse .game-media {
-        order: 1;
+        order: -1;
     }
 
     .about-layout {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .game-content,
+    .game-content.reverse {
+        grid-template-columns: 1fr !important;
+    }
+
+    .game-content > * {
+        min-width: 0;
     }
 }
 
